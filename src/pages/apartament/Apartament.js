@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ApartmentsData from "./../../data/ProjectData";
 import "./apartament.css";
 
@@ -55,19 +55,26 @@ export const Apartament = () => {
                 <span>📐 Area: {apartment.area} m²</span>
             </div>
             <div className="apartmentDescription">{apartment.description}</div>
-            <button
-                className="apartmentBtn"
-                onClick={() => {
-                    if (isSold) {
-                        alert("This apartment is sold.");
-                    } else {
-                        alert(`to successfully bought the apartment. you need to call on ${apartment.num}`);
-                        setIsSold(true);
-                    }
-                }}
-            >
-                Buy Now
-            </button>
+            <div className="buttons">
+                <button
+                    className="apartmentBtn"
+                    onClick={() => {
+                        if (isSold) {
+                            alert("This apartment is sold.");
+                        } else {
+                            alert(`to successfully bought the apartment. you need to call on ${apartment.num}`);
+                            setIsSold(true);
+                        }
+                    }}
+                >
+                    Buy Now
+                </button>
+                <Link to={`/aboutApartament/${apartment.id}`}>
+                 <button className="apartmentBtn">
+                    contact
+                 </button>
+                </Link>
+            </div>
 
             <div className="comentConatiner">
                 <div className="addComent">

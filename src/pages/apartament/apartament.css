@@ -66,6 +66,11 @@
   padding: 10px 0;
 }
 
+.apartmentContainer .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
 .apartmentContainer .apartmentBtn {
   margin-top: 20px;
   background-color: #254d70;
@@ -111,6 +116,7 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
 
 .apartmentContainer .comentConatiner .addComent button.apartmentBtn {
   padding: 12px 25px;

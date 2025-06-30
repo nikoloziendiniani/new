@@ -23,7 +23,7 @@
   width: 400%;
   height: 100%;
   /* overflow: auto; */
-  /* animation: slide 20s infinite; */
+  animation: slide 20s infinite;
 }
 
 .slider-image {
