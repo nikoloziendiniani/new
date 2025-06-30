@@ -20,9 +20,10 @@
 
 .slider-track {
   display: flex;
-  /* width: 400%; */
+  width: 400%;
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
+  /* animation: slide 20s infinite; */
 }
 
 .slider-image {
@@ -32,13 +33,13 @@
   flex-shrink: 0;
 }
 
-/* @keyframes slide {
+@keyframes slide {
   0% { transform: translateX(0%); }
   25% { transform: translateX(-100%); }
   50% { transform: translateX(-200%); }
   75% { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
-} */
+}
 
 .about-section {
   padding: 40px 20px;

@@ -88,7 +88,7 @@ const Navbar = () => {
               პროექტები
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
               to="/company"
               className={({ isActive }) =>
@@ -97,17 +97,17 @@ const Navbar = () => {
             >
               ჩვენ შესახებ
             </NavLink>
-          </li> */}
-          {/* <li>
+          </li>
+          <li>
             <NavLink
               to="/Archi"
               className={({ isActive }) =>
                 isActive ? "navbar-link active" : "navbar-link"
               }
             >
-              მეტი ჩვენს შესახებ
+              კომპანია
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink
               to="/contact"
