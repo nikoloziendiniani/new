@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.apartmentContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.apartmentContainer .apartmentImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.apartmentContainer .apartmentHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.apartmentContainer .apartmentHeader .apartmentTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #254d70;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.apartmentContainer .apartmentHeader .apartmentTitle span {
+  text-transform: capitalize;
+}
+
+.apartmentContainer .apartmentHeader .apartmentPrice {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #84ae92;
+}
+
+.apartmentContainer .apartmentInfo {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.apartmentContainer .apartmentInfo span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.apartmentContainer .apartmentDescription {
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+
+.apartmentContainer .apartmentBtn {
+  margin-top: 20px;
+  background-color: #254d70;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.apartmentContainer .apartmentBtn:hover {
+  background-color: #3b6b99;
+}
+
+.apartmentContainer .comentConatiner {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apartmentContainer .comentConatiner .addComent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.apartmentContainer .comentConatiner .addComent input {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.apartmentContainer .comentConatiner .addComent select {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.apartmentContainer .comentConatiner .addComent button.apartmentBtn {
+  padding: 12px 25px;
+  margin: 0;
+}
+
+.apartmentContainer .comentConatiner .coments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apartmentContainer .comentConatiner .coments .coment {
+  display: flex;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentContent {
+  flex-grow: 1;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentContent .comentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentContent .comentHeader .comentRating {
+  font-size: 1rem;
+  color: #f5a623;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentContent .comentHeader .comentRating .ratingValue {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 5px;
+}
+
+.apartmentContainer .comentConatiner .coments .coment .comentContent .comentText {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media screen and (max-width: 700px) {
+  .apartmentContainer .apartmentBtn {
+    align-self: center;
+  }
+
+  .apartmentContainer .comentConatiner .coments .coment {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .apartmentContainer .comentConatiner .coments .coment .comentContent .comentHeader {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .apartmentContainer .comentConatiner .coments .coment .comentContent {
+    text-align: left;
+  }
+
+  .apartmentContainer .comentConatiner .addComent {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .apartmentContainer .comentConatiner .addComent input,
+  .apartmentContainer .comentConatiner .addComent select,
+  .apartmentContainer .comentConatiner .addComent button.apartmentBtn {
+    width: 100%;
+  }
+}
