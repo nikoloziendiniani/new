@@ -20,7 +20,9 @@ const ApartmentsData = [
     rooms: 2,
     area: 75,
     sold: false,
-    coments: [{ opinion: "მომეწონა ადგილმდებარეობა და პროექტის დიზაინი.", rating: 4 }],
+    coments: [{ opinion: "მომეწონა ადგილმდებარეობა და პროექტის დიზაინი.", rating: 4 },
+    { opinion: "მაგარია!!", rating: 3 }
+    ],
     num: 577337744,
   },
   {
